@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenConvert</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+            <div class="logo"> <img src="./logo.png" alt=""></div>
+            <div class="navbar-buttons">
+                <a href="#">Documentation</a>
+                <a href="https://github.com/OpenConvert/OpenConvert-desktop/releases">Releases</a>
+                <a href="https://github.com/OpenConvert/">Github</a>
+            </div>
+        </nav>
+    <div class="download">
+        <p class="text">Download Our Open Source <br> Software Today</p>
+        <div class="dropdown">
+            <button onclick="dropdwn()" class="dropbtn"><i class="fa-solid fa-download"></i>&nbsp; Download </button>
+            <div id="myDropdwn" class="dropdwn-content">
+                <a href="#win"><i class="fa-brands fa-windows"></i> &nbsp;Windows</a>
+                <a href="#linux"><i class="fa-brands fa-linux"></i>&nbsp; Linux</a>
+                <a href="#darwin"><i class="fa-brands fa-apple"></i>&nbsp;Macos (coming soon)</a>
+            </div>
+        </div>
+        <p class="bottom-text">Last release 2024 November 22</p>
+    </div>
+    <script>
+        function dropdwn(){
+            document.getElementById("myDropdwn").classList.toggle("show")
+        }
+        window.onclick = function(event){
+            if(!event.target.matches('.dropbtn')){
+                const dropdowns = document.getElementsByClassName("dropdwn-content");
+                for(let i=0;i<dropdowns.length;i++){
+                    let openDropdwn = dropdowns[i];
+                    if(openDropdwn.classList.remove('show'));
+                }
+            }
+        }
+    </script>
+</body>
+</html>

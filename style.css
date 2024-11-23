@@ -1,0 +1,118 @@
+body{
+    background-image: linear-gradient(to right, #272323, #232021, #1f1e1f, #1c1c1c, #191919);
+}
+.download{
+    margin-top: 7rem;
+    margin-left: 27rem;
+    width: 65rem;
+    height: 39rem;
+    border-radius: 2rem;
+    background:#1e1e1e;
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+img{
+    width: 13rem;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 10px 20px;
+}
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+.navbar-buttons {
+    display: flex;
+    gap: 40px; 
+}
+.navbar-buttons a {
+    font-family: "Noto Sans", sans-serif;
+    color: white;
+    padding: 5px 10px; 
+    text-decoration: none;
+    background: transparent;
+    border-radius: 5px;
+}
+.navbar-buttons a:hover {
+    background-color: #313131;
+}
+.text{
+    font-family: "Noto Sans", sans-serif;
+    padding: 1rem;
+    text-align: center;
+    color: aliceblue;
+    font-size: 35px;
+    margin: 3rem;
+}
+.dropbtn{
+    font-family: "Noto Sans", sans-serif;
+    width: 35rem;
+    margin-top: 5rem;
+    margin-left: 15rem;
+    background: #3C3D37;
+    box-shadow: 0 8px 32px 0 rgba(62, 64, 92, 0.37);
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: white;
+    padding: 1.2rem;
+    font-size: 26px;
+    border: none;
+    border-radius: 2rem;
+}
+.dropbtn:hover{
+    background:#434442;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdwn-content{
+    background-color: #3C3D37;
+    margin-left: 16rem;
+    width: 33rem;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0 8px 32px 0 rgba(62, 64, 92, 0.37);
+    border-radius: 1.6rem;
+    z-index: 1;
+}
+.dropdwn-content a:hover{
+    background-color: #4d4d48;
+}
+.dropdwn-content a{
+    
+    font-family: "Noto Sans",sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border-bottom: 1px solid #191919;
+    color: white;
+    padding: 12px 15px;
+    text-decoration: none;
+    display: block;
+}
+.show{
+    display: block;
+}
+.material-symbols-outlined{
+    padding-right: 7px;
+}
+.bottom-text{
+    text-align: center;
+    margin-top: 13rem;
+    font-family: "Noto Sans",sans-serif;
+    color: wheat;
+}
+.bottom-text:hover{
+    color: #4f6eac;
+}
